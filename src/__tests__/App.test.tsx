@@ -8,4 +8,11 @@ describe("<App /> tests", () => {
     const helloElement = screen.getByText(/hello react/i);
     expect(helloElement).toBeInTheDocument();
   });
+
+  it("should render a button with some text", () => {
+    render(<App />);
+
+    const btn = screen.getByText(/thebutton/i);
+    expect(btn).toBeInTheDocument();
+  });
 });

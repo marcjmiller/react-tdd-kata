@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <>
-      Hello React!  
-    </>
+    <div
+      className={"w-screen h-screen flex flex-col justify-center items-center"}
+    >
+      {/* this just centers our button */}
+      <div className={"btn"}>
+        <span>thebutton</span>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
