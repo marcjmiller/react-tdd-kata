@@ -8,7 +8,7 @@ interface OwnProps {
 function Button({ symbol, onClick }: OwnProps) {
   return (
     <div
-      className={"button bg-gray-50 rounded w-6 h-6 m-2 text-center cursor-pointer"}
+      className={"button bg-gray-50 rounded w-6 h-6 m-2 text-center cursor-pointer select-none"}
       onClick={onClick}
     >
       <span className={""}>{symbol}</span>
